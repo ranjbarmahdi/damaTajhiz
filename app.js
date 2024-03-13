@@ -285,14 +285,13 @@ async function main() {
                args: ["--no-sandbox", "--disable-setuid-sandbox"],
           });
 
-          console.log("After create browser");
+
           page = await browser.newPage();
           await page.setViewport({
                width: 1920,
                height: 1080,
           });
 
-          console.log("After create page");
          
           urlRow = await removeUrl();
        
