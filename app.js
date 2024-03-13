@@ -370,8 +370,8 @@ async function main() {
 let usageMemory = (os.totalmem() - os.freemem()) / (1024 * 1024 * 1024); 
 let memoryUsagePercentage = checkMemoryUsage();
 let cpuUsagePercentage = getCpuUsagePercentage();
-//memoryUsagePercentage <= 80 && cpuUsagePercentage <= 80 && usageMemory <= 27
-if (true) {
+
+if (memoryUsagePercentage <= 80 && cpuUsagePercentage <= 80 && usageMemory <= 27) {
      main();
 }
 else {
