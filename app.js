@@ -371,7 +371,7 @@ let usageMemory = (os.totalmem() - os.freemem()) / (1024 * 1024 * 1024);
 let memoryUsagePercentage = checkMemoryUsage();
 let cpuUsagePercentage = getCpuUsagePercentage();
 
-if (memoryUsagePercentage <= 80 && cpuUsagePercentage <= 80 && usageMemory <= 27) {
+if (memoryUsagePercentage <= 85 && cpuUsagePercentage <= 80 && usageMemory <= 28) {
      main();
 }
 else {
