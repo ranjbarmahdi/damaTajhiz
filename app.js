@@ -136,7 +136,7 @@ async function scrapSingleProduct(page, productURL, imagesDIR, documentsDir, row
 
 
           console.log(`======================== Start scraping : \n${productURL}\n`);
-          await page.goto(productURL);
+          await page.goto(productURL, { timeout:180000 });
   
 
           await delay(5000);
