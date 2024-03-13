@@ -109,6 +109,115 @@ services:
     networks:
       - custom_network
 
+  node-app-10:
+    user: root
+    restart: always
+    build:
+      context: .
+    ports:
+      - "4020:4008"
+    volumes:
+      - ./damaTajhiz:/usr/src/app/damaTajhiz
+    networks:
+      - custom_network
+
+  node-app-11:
+    user: root
+    restart: always
+    build:
+      context: .
+    ports:
+      - "4021:4008"
+    volumes:
+      - ./damaTajhiz:/usr/src/app/damaTajhiz
+    networks:
+      - custom_network
+
+  node-app-12:
+    user: root
+    restart: always
+    build:
+      context: .
+    ports:
+      - "4022:4008"
+    volumes:
+      - ./damaTajhiz:/usr/src/app/damaTajhiz
+    networks:
+      - custom_network
+
+
+  node-app-13:
+    user: root
+    restart: always
+    build:
+      context: .
+    ports:
+      - "4023:4008"
+    volumes:
+      - ./damaTajhiz:/usr/src/app/damaTajhiz
+    networks:
+      - custom_network
+
+  node-app-14:
+    user: root
+    restart: always
+    build:
+      context: .
+    ports:
+      - "4024:4008"
+    volumes:
+      - ./damaTajhiz:/usr/src/app/damaTajhiz
+    networks:
+      - custom_network
+
+  node-app-15:
+    user: root
+    restart: always
+    build:
+      context: .
+    ports:
+      - "4025:4008"
+    volumes:
+      - ./damaTajhiz:/usr/src/app/damaTajhiz
+    networks:
+      - custom_network
+
+  node-app-16:
+    user: root
+    restart: always
+    build:
+      context: .
+    ports:
+      - "4026:4008"
+    volumes:
+      - ./damaTajhiz:/usr/src/app/damaTajhiz
+    networks:
+      - custom_network
+
+  node-app-17:
+    user: root
+    restart: always
+    build:
+      context: .
+    ports:
+      - "4027:4008"
+    volumes:
+      - ./damaTajhiz:/usr/src/app/damaTajhiz
+    networks:
+      - custom_network
+
+  node-app-18:
+    user: root
+    restart: always
+    build:
+      context: .
+    ports:
+      - "4028:4008"
+    volumes:
+      - ./damaTajhiz:/usr/src/app/damaTajhiz
+    networks:
+      - custom_network
+      
 networks:
   custom_network:
     external: true
